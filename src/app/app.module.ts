@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListTreeComponent } from './components/list-tree/list-tree.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListTreeComponent,
   ],
   imports: [
     BrowserModule,

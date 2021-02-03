@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Tree } from '../../tree';
 
 @Component({
   selector: 'app-tree',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tree.component.css']
 })
 export class TreeComponent implements OnInit {
-
+  @Input() tree: Tree;
   constructor() { }
 
   ngOnInit() {
+    
   }
-
 }

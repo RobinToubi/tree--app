@@ -1,3 +1,10 @@
-<p>
-  tree works!
-</p>
+<div class="card" style="width: 18rem;">
+  <div *ngFor="let image of tree.images">
+    <img  src={{image.src}} class="card-img-top" alt={{image.alt}}>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{tree.name}}</h5>
+    <p class="card-text">{{tree.description}}</p>
+    <p  class="card-text">Price: {{tree.price}}</p>
+  </div>
+</div>

@@ -1,3 +1,12 @@
-<p>
-  list-tree works!
-</p>
+<div>
+    <h2>My Trees</h2>
+    <ul class="trees">
+    <li *ngFor="let tree of trees"
+        [class.selected]="tree === selectedTree"
+        (click)="onSelect(tree)">
+        <span class="badge">{{tree._id}}</span> {{tree.name}}
+    </li>
+    </ul>
+<app-hero-detail [tree]="selectedTree"></app-hero-detail>
+</div>
+
